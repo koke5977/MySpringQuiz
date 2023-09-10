@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>SpringBoot四択クイズ</title>
+</head>
+<body>
+	<h1>ようこそ！</h1>
+	<h3>このクイズアプリはSpringBoot2の自主学習による成果物の1つとして試験的に作成したものです。</h3>
+	<h3>データサイエンスに関する4択問題が10問出題されます。以下のボタンを押すと始まります。</h3>
+	<form th:action="@{/quiz}" method="get">
+        <div>
+            <input type="submit" value="スタート"/>
+        </div>
+	</form>
+</body>
+</html>

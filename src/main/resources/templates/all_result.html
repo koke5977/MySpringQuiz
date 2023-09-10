@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>SpringBoot四択クイズ</title>
+</head>
+<body>
+	<h1>結果発表</h1>
+	<h3 th:text="'お疲れ様でした！ あなたは、10問中' + ${correct_count} + '問正解しました'">発表内容</h3>
+	<form th:action="@{/}" method="get">
+        <div>
+        <input type="submit" value="最初の画面に戻る"/>
+        </div>
+	</form>
+</body>
+</html>
